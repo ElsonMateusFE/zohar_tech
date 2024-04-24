@@ -1,0 +1,148 @@
+<?php
+if (isset($_POST['submit'])) {
+    include_once('config.php');
+
+    $email = $_POST['email'];
+    $source = $_POST['source']; // Recupera a fonte do formulário
+
+    $result = mysqli_query($conexao, "INSERT INTO zohar_banco (email, formulario) VALUES ('$email', '$source')");
+}
+?>
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../styles/stylecadastro.css">
+    <link rel="shortcut icon" href="../icones e logos/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <section class="card-promocional">
+        <div>
+            <p><strong>Proteja sua casa por apenas 50 centavos por dia. </strong>Adquira agora e viva com tranquilidade.
+            </p>
+            <a href="cadastro.html">Fale com um especialista</a>
+        </div>
+    </section>
+    <header>
+        <nav class="menu-principal">
+            <a href="index.html">
+                <img src="../icones e logos/logo-oficial.svg" alt="Logo Zohar Seguros" class="logo-zohar">
+            </a>
+            <div class="mobile-menu" onclick="openNav()">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#duvida">Dúvida</a>
+                </li>
+                <li>
+                    <a href="./cadastro.php" class="btn-contato">Fale conosco</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Menu lateral responsivo -->
+    <div class="menu-lateral" id="mySidenav" class="sidenav">
+        <section>
+            <img src="../icones e logos/icone-x.svg" alt="" id="icone-x">
+            <h2>CONHEÇA NOSSOS SEGUROS</h2>
+            <ul>
+                <li>
+                    <a href="seguro-saude-empresarial.php">
+                        <img src="../icones e logos/icone-seguro-saude.svg" alt="">
+                        <h4>Seguro saúde empresarial</h4>
+                        <p>Serviços e coberturas que garantem muito mais segurança e tranquilidade no dia a dia.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="seguro-saude-individual.php">
+                        <img src="../icones e logos/icone-seguro-individual.svg" alt="">
+                        <h4>Seguro saúde individual</h4>
+                        <p>Serviços e coberturas que garantem muito mais segurança e tranquilidade no dia a dia.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="consorcio.php">
+                        <img src="../icones e logos/icone-consorcio.svg" alt="">
+                        <h4>Conheça nossos consorcios</h4>
+                        <p>Serviços e coberturas que garantem muito mais segurança e tranquilidade no dia a dia.</p>
+                    </a>
+                </li>
+            </ul>
+            <a href="./cadastro.php" class="btn-contato-responsivo">Fale conosco</a>
+        </section>
+    </div>
+
+    <section class="input-email" id="cadastro">
+        <h1>Agradecemos por escolher a Zohar Seguros para cuidar do seu bem-estar!</h1>
+        <p>Coloque seu e-mail e clique no botão abaixo e entre em contato conosco pelo WhatsApp. Estamos aqui para
+            responder a todas as suas perguntas e oferecer a melhor assistência.</p>
+        <div>
+            <form action="cadastro.php" method="POST">
+                <input type="hidden" name="source" value="cadastro_principal">
+                <input type="email" name="email" id="email" placeholder="Digite seu melhor e-mail">
+                <input type="submit" name="submit" id="submit" class="btn" value="Entrar em contato por WhatsApp">
+            </form>
+        </div>
+    </section>
+    <section class="duvidas" id="duvida">
+        <div>
+            <h2>Ainda em dúvida sobre o seguro?</h2>
+            <img src="../imagens/familia-interracial.png" alt="" class="familia-interracial-mobile">
+            <p>Por que você deveria contratar um seguro hoje?Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+                minim veniam, quis nostrud exerci tation ullamcorper <br><br>Por que você deveria contratar um seguro
+                hoje?Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+                ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                ullamcorper</p>
+        </div>
+        <img src="../imagens/familia-interracial.png" alt="" class="familia-interracial-desktop">
+    </section>
+    <footer>
+        <div class="footer-menus">
+            <div>
+                <a href="index.html">
+                    <img src="../icones e logos/logo-zohar-branca.svg" alt="">
+                </a>
+                <p>Cuide de quem importa, conecte-se<br>com a segurança Zohar.</p>
+                <p>Faça seu seguro de forma fácil,<br>online e segura.</p>
+            </div>
+            <div class="menu-secundario">
+                <h4>Entre em contato</h4>
+                <a href="#">Fale Conosco</a>
+                <a href="#">Whatsapp</a>
+                <a href="#">Trabalhe Conosco</a>
+            </div>
+            <div class="menu-secundario">
+                <h4>Redes Sociais</h4>
+                <a href="https://www.instagram.com/zoharseguros/" target="_blank">Instagram</a>
+                <a href="https://www.facebook.com/profile.php?id=61557290378468" target="_blank">Facebook</a>
+                <a href="#">LinkedIn</a>
+            </div>
+            <div class="menu-secundario">
+                <h4>Produtos</h4>
+                <a href="seguro-saude-empresarial.php">Seguro Saúde Empresarial</a>
+                <a href="seguro-saude-individual.php">Seguro Saúde Individual</a>
+                <a href="consorcio.php">Consórcio</a>
+            </div>
+        </div>
+        <div class="direitos-reservados">
+            <p>Zohar Seguros - 2024 © Todos os direitos reservados</p>
+        </div>
+    </footer>
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>
