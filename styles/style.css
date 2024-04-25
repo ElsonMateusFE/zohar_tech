@@ -595,15 +595,36 @@ nav {
     background-color: #d98e04;
 }
 
+/*
+#bg-color-viagem {
+    background-color: rgb(255, 255, 255);
+}
+
+#bg-color-viagem h2 {
+    color: #022728;
+}
+
+#bg-color-viagem h3 {
+    color: #022728;
+}
+
+#bg-color-viagem h4 {
+    color: #022728;
+}
+
+#bg-color-viagem p {
+    color: #022728;
+}
+
 #bg-color-residencia {
     height: 100%;
     padding: 80px 0;
 }
 
-
 #bg-color-residencia h4 {
     line-height: 34px;
 }
+*/
 
 /**/
 @media (max-width: 999px) {
