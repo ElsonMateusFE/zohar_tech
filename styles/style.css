@@ -22,15 +22,10 @@ h3 {
 }
 
 .card-promocional {
-    background-color: #022728;
+    background-color: #034159;
     padding: 12px;
     align-items: center;
-
-    border: 1px solid rgb(129, 129, 129);
     padding: 20px 0;
-    border-left-color: #022728;
-    border-right-color: #022728;
-    border-top-color: #022728;
 }
 
 .card-promocional div {
@@ -389,13 +384,14 @@ nav {
 }
 
 .produto-seguro a {
-    display: flex;
-    align-items: center;
+    text-align: center;
     text-decoration: none;
 }
 
-.produto-seguro .copy {
-    margin-left: 40px;
+.produto-seguro img {
+    display: block;
+    margin: auto;
+    margin-bottom: 22px;
 }
 
 .produto-seguro h2 {
@@ -567,7 +563,7 @@ nav {
 
 
 .seguro-card-imagem {
-    width: 50%;
+    width: 42%;
     border-radius: 200px 0px 200px 0px;
 }
 
@@ -594,37 +590,6 @@ nav {
 .seguro-card-conteudo-button:active {
     background-color: #d98e04;
 }
-
-/*
-#bg-color-viagem {
-    background-color: rgb(255, 255, 255);
-}
-
-#bg-color-viagem h2 {
-    color: #022728;
-}
-
-#bg-color-viagem h3 {
-    color: #022728;
-}
-
-#bg-color-viagem h4 {
-    color: #022728;
-}
-
-#bg-color-viagem p {
-    color: #022728;
-}
-
-#bg-color-residencia {
-    height: 100%;
-    padding: 80px 0;
-}
-
-#bg-color-residencia h4 {
-    line-height: 34px;
-}
-*/
 
 /**/
 @media (max-width: 999px) {
@@ -689,8 +654,16 @@ nav {
 /* Estilos de Apresentação deSeguros*/
 
 footer {
-    background-color: #022728;
+    background-color: #034159;
     font-weight: 300;
+}
+
+footer .creditos {
+    width: 360px;
+}
+
+footer .creditos p {
+    line-height: 20px;
 }
 
 footer .footer-menus {
@@ -753,7 +726,6 @@ footer .direitos-reservados p {
 
 @media (max-width: 999px) {
     footer {
-        background-color: #022728;
         font-weight: 300;
     }
 
