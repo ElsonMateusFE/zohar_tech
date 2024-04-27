@@ -151,6 +151,18 @@ nav {
         display: block;
     }
 
+    .mobile-menu .line1 {
+        background-color: white;
+    }
+
+    .mobile-menu .line2 {
+        background-color: white;
+    }
+
+    .mobile-menu .line3 {
+        background-color: white;
+    }
+
     /* Menu Responsivo Lateral*/
     .menu-lateral {
         top: 0;
@@ -224,6 +236,7 @@ nav {
         color: white;
         font-size: 16px;
         margin: 10px 0;
+        line-height: 20px;
     }
 
     .menu-lateral ul li p {
@@ -372,7 +385,7 @@ nav {
 }
 
 .produto-seguro {
-    padding: 30px;
+    padding: 56px;
     border-radius: 16px;
     background-color: #034159;
     width: 32.5%;
@@ -426,7 +439,7 @@ nav {
 
     .produto-seguro {
         width: 100%;
-        margin-bottom: 10px;
+        margin-bottom: 24px;
     }
 }
 
@@ -471,8 +484,16 @@ nav {
 }
 
 @media (max-width: 999px) {
+    #sobre-nos {
+        margin-top: 80px;
+    }
+    
     .dimensao-sobre-nos {
         width: 90%;
+    }
+
+    #sobre-nos h2 {
+        font-size: 32px;
     }
 
     #sobre-nos p {
@@ -480,7 +501,7 @@ nav {
     }
 
     #sobre-nos img {
-        width: 14%;
+        width: 20%;
     }
 }
 
@@ -508,7 +529,7 @@ nav {
 
 .seguro-card {
     margin: auto;
-    padding: 80px 0;
+    padding: 90px 0;
 }
 
 .seguro-card-conteudo {
@@ -594,7 +615,7 @@ nav {
 /**/
 @media (max-width: 999px) {
     .seguro-card {
-        padding: 0;
+        padding: 90px 0;
     }
 
     #padding-viagem {
@@ -610,7 +631,7 @@ nav {
     }
 
     .seguro-card-apresentacao-beneficios div {
-        margin-bottom: 20;
+        margin-bottom: 20px;
     }
 
     .seguro-card-headline h3 {
@@ -671,7 +692,7 @@ footer .footer-menus {
     justify-content: space-between;
     width: 1366px;
     margin: auto;
-    padding: 60px 0;
+    padding: 44px 0;
 }
 
 footer .footer-menus h4 {

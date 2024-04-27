@@ -5,7 +5,15 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "greycliff-cf", sans-serif;
-    color: #022728;
+    color: white;
+}
+
+body {
+    background-color: #022728;
+}
+
+p {
+    font-weight: 100;
 }
 
 body.menu-lateral-aberta {
@@ -17,13 +25,14 @@ h3 {
 }
 
 .card-promocional {
-    background-color: #022728;
+    background-color: #034159;
     padding: 12px;
     align-items: center;
+    padding: 20px 0;
 }
 
 .card-promocional div {
-    max-width: 908px;
+    max-width: 955px;
     align-items: center;
     justify-content: space-between;
     display: flex;
@@ -37,6 +46,7 @@ h3 {
 .card-promocional p {
     font-weight: 300;
     color: white;
+    line-height: 19px;
 }
 
 .card-promocional a {
@@ -58,6 +68,24 @@ h3 {
 
 .card-promocional a:active {
     background-color: #d98e04;
+}
+
+@media (max-width: 999px) {
+    .card-promocional div {
+        display: block;
+        text-align: center;
+    }
+
+    .card-promocional p {
+        margin-bottom: 22px;
+        margin: auto;
+        margin-bottom: 16px;
+        width: 96%;
+    }
+
+    .card-promocional {
+        padding: 22px 0;
+    }
 }
 
 @media (max-width: 999px) {
@@ -142,6 +170,18 @@ nav {
 
     .mobile-menu {
         display: block;
+    }
+
+    .mobile-menu .line1 {
+        background-color: white;
+    }
+
+    .mobile-menu .line2 {
+        background-color: white;
+    }
+
+    .mobile-menu .line3 {
+        background-color: white;
     }
 
     /* Menu Responsivo Lateral*/
@@ -335,8 +375,9 @@ nav {
     }
 
     .input-email h1 {
-        font-size: 26px;
+        font-size: 30px;
         margin: 0;
+        margin-bottom: 12px;
     }
     
     .input-email p {
@@ -381,6 +422,14 @@ nav {
     width: 44%;
 }
 
+.duvidas div h2 {
+    font-size: 30px;
+}
+
+.duvidas div p {
+    font-size: 18px;
+}
+
 .duvidas-escudos-beneficios {
     display: flex;
     justify-content: space-between;
@@ -419,7 +468,7 @@ nav {
 }
 
 .duvidas img {
-    width: 50%;
+    width: 45%;
 }
 
 @media (max-width: 999px) {
@@ -459,8 +508,16 @@ nav {
 }
 
 footer {
-    background-color: #022728;
+    background-color: #034159;
     font-weight: 300;
+}
+
+footer .creditos {
+    width: 360px;
+}
+
+footer .creditos p {
+    line-height: 20px;
 }
 
 footer .footer-menus {
@@ -468,7 +525,7 @@ footer .footer-menus {
     justify-content: space-between;
     width: 1366px;
     margin: auto;
-    padding: 60px 0;
+    padding: 44px 0;
 }
 
 footer .footer-menus h4 {
@@ -523,7 +580,6 @@ footer .direitos-reservados p {
 
 @media (max-width: 999px) {
     footer {
-        background-color: #022728;
         font-weight: 300;
     }
 
